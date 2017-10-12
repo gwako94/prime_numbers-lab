@@ -13,7 +13,7 @@ class TestPrimeNumbers(unittest.TestCase):
     def test_input_is_zero(self):
         self.assertEqual(primeNumbers(0), [])
     def test_output_is_primeNumbers(self):
-        self.assertEqual(primeNumbers(8), [1,2,3,5,7])
+        self.assertEqual(primeNumbers(8), [2,3,5,7])
     def test_input_is_not_a_dictionary(self):
         self.assertRaises(TypeError,primeNumbers, {"jane":2, "tom":4})
 if __name__ == "__main__":
