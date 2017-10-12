@@ -1,6 +1,6 @@
 def primeNumbers(n):
   isPrime = []
-  if isinstance(n, (list, dict)):
+  if isinstance(n, (list, dict, str)):
     raise TypeError("Number should be an integer") 
   else:
     for num in range(2,n + 1):
@@ -13,4 +13,3 @@ def primeNumbers(n):
              isPrime.append(num)
     return isPrime
 
-primeNumbers(9)
